@@ -283,6 +283,11 @@ def main():
     df_feat["strat_fold"] = folds
     df_feat["ground_truth"] = targets
 
+    _feat_cols = [c for c in df_feat.columns
+                  if c not in ["ecg_id", "strat_fold", "ground_truth"]]
+    df_feat[["ecg_id"] + _feat_cols + ["strat_fold", "ground_truth"]] \
+        .to_csv("features_full.csv", index=False)
+
     n_before = len(df_feat)
     df_feat = df_feat.dropna().reset_index(drop=True)
     print(f"  {n_before} __> {len(df_feat)} ({n_before - len(df_feat)} dropped)")
