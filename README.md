@@ -73,10 +73,6 @@ python ml_pipeline.py
 ```
   This produces: `ml_results_individual_rounds.csv` and `permutation_importance_rf.csv`
 
-
-## References
-Wagner, P., Strodthoff, N., Bousseljot, R.-D., Kreiseler, D., Lunze, F. I., Samek, W., & Schaeffter, T. (2020). PTB-XL, a large publicly available electrocardiography dataset. *Scientific Data*, 7, 154. https://doi.org/10.1038/s41597-020-0495-6
-
 ## Full feature dataset
 
 `features_full.csv` contains the extracted features for all 14,358 successfully
@@ -86,3 +82,9 @@ dropped from the complete-case analysis. Of these, 6,540 have a complete
 could not be processed, so they are not included; relative to the full
 14,576 age-filtered cohort this gives the 44.9% coverage reported in the paper.
 Columns: `ecg_id`, the 142 features, `strat_fold`, and `ground_truth`.
+
+
+## References
+Wagner, P., Strodthoff, N., Bousseljot, R.-D., Kreiseler, D., Lunze, F. I., Samek, W., & Schaeffter, T. (2020). PTB-XL, a large publicly available electrocardiography dataset. *Scientific Data*, 7, 154. https://doi.org/10.1038/s41597-020-0495-6
+
+
