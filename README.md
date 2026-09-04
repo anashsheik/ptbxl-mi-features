@@ -29,6 +29,15 @@ The most important single features from permutation importance came from QRS mor
 
 All three features are critical and reflect anteroseptal infarction.
 
+## Full feature dataset
+
+`features_full.csv` contains the extracted features for all 14,358 successfully
+processed recordings, including the rows with missing (NaN) values that were
+dropped from the complete-case analysis. Of these, 6,540 have a complete
+142-feature vector. A further 218 recordings failed delineation entirely and
+could not be processed, so they are not included; relative to the full
+14,576 age-filtered cohort this gives the 44.9% coverage reported in the paper.
+Columns: `ecg_id`, the 142 features, `strat_fold`, and `ground_truth`.
 
 
 ## Requirements
@@ -73,15 +82,7 @@ python ml_pipeline.py
 ```
   This produces: `ml_results_individual_rounds.csv` and `permutation_importance_rf.csv`
 
-## Full feature dataset
 
-`features_full.csv` contains the extracted features for all 14,358 successfully
-processed recordings, including the rows with missing (NaN) values that were
-dropped from the complete-case analysis. Of these, 6,540 have a complete
-142-feature vector. A further 218 recordings failed delineation entirely and
-could not be processed, so they are not included; relative to the full
-14,576 age-filtered cohort this gives the 44.9% coverage reported in the paper.
-Columns: `ecg_id`, the 142 features, `strat_fold`, and `ground_truth`.
 
 
 ## References
