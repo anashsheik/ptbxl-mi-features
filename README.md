@@ -15,7 +15,7 @@ To see the full report on this project, please see the bachelor thesis report su
 
 ## Project summary
 
-The best-performing model was Random Forest (RF) on all 142 features.
+On the complete 142-feature set, the selection protocol (highest fold-9 F1) selected logistic regression. Logistic regression achieved an F1 score of 0.750 on the test fold. Random Forest model was not selected by the protocol, even though, it achieved the highest test-fold F1 and is reported as the best-observed model. The numbers below is for Random Forest at the default threshold of 0.5, and no class weighting.
 
 - F1 = 0.7744
 - AUROC = 0.9360
