@@ -19,8 +19,8 @@ The best-performing model was Random Forest (RF) on all 142 features.
 
 - F1 = 0.7744
 - AUROC = 0.9360
-- Recall = 61.8 %
-- Precision = 94.2 %
+- Recall = 65.6 % (103 of 157 MI recordings)
+- Precision = 94.5 % (103 of 109 positive predictions)
 
 The most important single features from permutation importance came from QRS morphology
 - `V3_R_amplitude`
