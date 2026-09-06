@@ -19,6 +19,7 @@ On the complete 142-feature set, the selection protocol (highest fold-9 F1) sele
 
 - F1 = 0.7744
 - AUROC = 0.9360
+- AUPRC = 0.871
 - Recall = 65.6 % (103 of 157 MI recordings)
 - Precision = 94.5 % (103 of 109 positive predictions)
 
